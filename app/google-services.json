@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "102132996169",
+    "project_id": "ayokelas-abd96",
+    "storage_bucket": "ayokelas-abd96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102132996169:android:39719bbbfe29ebd5b0c798",
+        "android_client_info": {
+          "package_name": "com.yhezra.ayokelas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102132996169-tm4co4t227v73c6dhslaov9av88fcpf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6SqC8FhI9TWTg-P5aqOKSn8Z30zCLr0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102132996169-tm4co4t227v73c6dhslaov9av88fcpf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

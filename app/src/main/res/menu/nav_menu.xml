@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile"/>
+        <item android:id="@+id/nav_fav_class"
+            android:icon="@drawable/ic_favorite"
+            android:title="All Classrooms"/>
+        <item android:id="@+id/nav_teaching"
+            android:icon="@drawable/ic_class"
+            android:title="Teaching"/>
+        <item android:id="@+id/nav_enrolled"
+            android:icon="@drawable/ic_class"
+            android:title="Enrolled"/>
+    </group>
+    <item android:title="More">
+        <menu>
+            <item
+                android:id="@+id/nav_info_corona"
+                android:icon="@drawable/ic_info_coronavirus"
+                android:title="Info Covid-19" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Log Out" />
+        </menu>
+    </item>
+</menu>
