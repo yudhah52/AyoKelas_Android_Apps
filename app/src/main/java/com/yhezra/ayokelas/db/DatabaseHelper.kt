@@ -18,8 +18,11 @@ internal class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATA
                 " ${DatabaseContract.ClassroomColumns.TITLE} TEXT NOT NULL," +
                 " ${DatabaseContract.ClassroomColumns.DESCRIPTION} TEXT NOT NULL," +
                 " ${DatabaseContract.ClassroomColumns.DATE} TEXT NOT NULL,"+
-                " ${DatabaseContract.ClassroomColumns.TEACHER} TEXT NOT NULL,"+
-                " ${DatabaseContract.ClassroomColumns.USER} TEXT NOT NULL)"
+                " ${DatabaseContract.ClassroomColumns.SCHEDULE} TEXT NOT NULL,"+
+                " ${DatabaseContract.ClassroomColumns.USER_NAME} TEXT NOT NULL,"+
+                " ${DatabaseContract.ClassroomColumns.USER_EMAIL} TEXT NOT NULL,"+
+                " ${DatabaseContract.ClassroomColumns.MEMBERS} TEXT NOT NULL,"+
+                " ${DatabaseContract.ClassroomColumns.ASSIGNMENTS} TEXT NOT NULL)"
     }
 
     override fun onCreate(db: SQLiteDatabase) {

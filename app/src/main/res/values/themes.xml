@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.AyoKelas" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#3C8DAD</item>
+        <item name="colorPrimary">#548CA8</item>
         <item name="colorPrimaryVariant">#125D98</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -12,6 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/andada</item>
     </style>
     <style name="Theme.NavigationDrawer.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 

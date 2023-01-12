@@ -11,8 +11,11 @@ internal class DatabaseContract {
             const val TITLE = "title"
             const val DESCRIPTION = "description"
             const val DATE = "date"
-            const val TEACHER = "teacher"
-            const val USER = "user"
+            const val SCHEDULE = "schedule"
+            const val USER_NAME = "userName"
+            const val USER_EMAIL = "userEmail"
+            const val MEMBERS = "members"
+            const val ASSIGNMENTS = "assignments"
         }
 
     }

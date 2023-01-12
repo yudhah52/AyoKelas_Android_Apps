@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#334257"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -9,6 +10,9 @@
         android:id="@+id/cv_item_classroom"
         android:layout_width="match_parent"
         android:layout_height="175dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#7DEDFF"
         app:cardCornerRadius="10dp"
         app:cardUseCompatPadding="true"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,8 +29,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/assistant"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Date" />
@@ -36,61 +42,64 @@
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_marginTop="4dp"
-                android:layout_marginEnd="32dp"
-                android:background="@android:color/darker_gray"
+                android:background="@color/white"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/tv_date"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_date" />
 
             <TextView
                 android:id="@+id/tv_class_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="12dp"
+                android:fontFamily="@font/days_one"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/tv_date"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/line1"
                 tools:text="Nama Kelas" />
 
             <TextView
-                android:id="@+id/tv_desc"
+                android:id="@+id/tv_schedule"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
                 android:maxLines="2"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/tv_class_name"
                 app:layout_constraintTop_toBottomOf="@+id/tv_class_name"
-                tools:text="Deskripsi Kelas"
-                android:textColor="@color/black"/>
+                tools:text="Jadwal Kelas" />
 
             <TextView
                 android:id="@+id/tv_teacher"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_userEmail"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/tv_desc"
-                app:layout_constraintTop_toBottomOf="@+id/tv_desc"
-                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_schedule"
+                app:layout_constraintTop_toBottomOf="@+id/tv_schedule"
+                app:layout_constraintVertical_bias="1.0"
                 tools:text="Pengajar" />
 
             <TextView
-                android:id="@+id/tv_user"
+                android:id="@+id/tv_userEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_teacher"
-                tools:text="user" />
+                app:layout_constraintTop_toTopOf="@+id/tv_teacher"
+                tools:text="user@gmail.com" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

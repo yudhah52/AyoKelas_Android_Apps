@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClassroomAddUpdateActivity">
+    tools:context=".ui.ClassroomAddUpdateActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -17,19 +17,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:popupTheme="@style/Theme.NavigationDrawer.PopupOverlay" />
 
-    <TextView
-        android:id="@+id/tv_class_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Kelas"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
@@ -38,8 +25,9 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_class_name">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <EditText
             android:id="@+id/ed_class_name"
@@ -50,16 +38,6 @@
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/tv_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Deskripsi Kelas"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/tv_class_name"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
         android:layout_width="match_parent"
@@ -69,7 +47,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_description">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <EditText
             android:id="@+id/ed_desc"
@@ -80,16 +58,6 @@
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/tv_teacher"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Pengajar"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/tv_class_name"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout3"
         android:layout_width="match_parent"
@@ -99,13 +67,13 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_teacher">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
 
         <EditText
-            android:id="@+id/ed_teacher"
+            android:id="@+id/ed_schedule"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nama Pengajar"
+            android:hint="Jadwal"
             android:inputType="textCapSentences"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>

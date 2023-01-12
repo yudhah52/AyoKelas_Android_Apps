@@ -9,7 +9,9 @@ data class Classroom(
     var title: String? = null,
     var description: String? = null,
     var date: String? = null,
-    var teacher: String? = null,
-    var user: String? = null
-//    var student: ArrayList<String>
+    var schedule: String? = null,
+    var userName: String? = null,
+    var userEmail: String? = null,
+    var members: String? = null,
+    var assignments: String? = null
 ) : Parcelable

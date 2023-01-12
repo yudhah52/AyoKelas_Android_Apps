@@ -7,27 +7,27 @@
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="com.yhezra.ayokelas.ui.ProfileFragment"
+        android:name="com.yhezra.ayokelas.ui.navigationdrawer.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
-        android:id="@+id/nav_fav_class"
-        android:name="com.yhezra.ayokelas.ui.AllClassroomsFragment"
+        android:id="@+id/nav_all_classrooms"
+        android:name="com.yhezra.ayokelas.ui.navigationdrawer.AllClassroomsFragment"
         android:label="AllClassrooms"
         tools:layout="@layout/fragment_all_classrooms" />
     <fragment
         android:id="@+id/nav_enrolled"
-        android:name="com.yhezra.ayokelas.ui.EnrolledFragment"
+        android:name="com.yhezra.ayokelas.ui.navigationdrawer.EnrolledFragment"
         android:label="Enrolled"
         tools:layout="@layout/fragment_enrolled" />
     <fragment
         android:id="@+id/nav_teaching"
-        android:name="com.yhezra.ayokelas.ui.TeachingFragment"
+        android:name="com.yhezra.ayokelas.ui.navigationdrawer.TeachingFragment"
         android:label="Teaching"
         tools:layout="@layout/fragment_teaching" />
     <fragment
         android:id="@+id/nav_info_corona"
-        android:name="com.yhezra.ayokelas.ui.InfoCovidFragment"
+        android:name="com.yhezra.ayokelas.ui.navigationdrawer.InfoCovidFragment"
         android:label="Info Covid19"
-        tools:layout="@layout/fragment_info_covid" />
+        tools:layout="@layout/fragment_info_covid_1" />
 </navigation>

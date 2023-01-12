@@ -15,9 +15,12 @@ object MappingHelper {
                 val title = getString(getColumnIndexOrThrow(DatabaseContract.ClassroomColumns.TITLE))
                 val description = getString(getColumnIndexOrThrow(DatabaseContract.ClassroomColumns.DESCRIPTION))
                 val date = getString(getColumnIndexOrThrow(DatabaseContract.ClassroomColumns.DATE))
-                val teacher = getString(getColumnIndexOrThrow(DatabaseContract.ClassroomColumns.TEACHER))
-                val user = getString(getColumnIndexOrThrow(DatabaseContract.ClassroomColumns.USER))
-                classroomList.add(Classroom(id, title, description, date, teacher, user))
+                val schedule = getString(getColumnIndexOrThrow(DatabaseContract.ClassroomColumns.SCHEDULE))
+                val userName = getString(getColumnIndexOrThrow(DatabaseContract.ClassroomColumns.USER_NAME))
+                val userEmail = getString(getColumnIndexOrThrow(DatabaseContract.ClassroomColumns.USER_EMAIL))
+                val members = getString(getColumnIndexOrThrow(DatabaseContract.ClassroomColumns.MEMBERS))
+                val assignments = getString(getColumnIndexOrThrow(DatabaseContract.ClassroomColumns.ASSIGNMENTS))
+                classroomList.add(Classroom(id, title, description, date, schedule, userName, userEmail, members, assignments))
             }
         }
         return classroomList

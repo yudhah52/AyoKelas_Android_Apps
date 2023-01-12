@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".ui.AllClassroomsFragment">
+    android:background="#334257"
+    tools:context=".ui.navigationdrawer.AllClassroomsFragment">
 
     <ProgressBar
         android:id="@+id/progressbar"
